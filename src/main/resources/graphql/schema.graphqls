@@ -1,0 +1,48 @@
+""" Make sure the names are same as in the graphql controller """
+
+type Query {
+    accounts : [BankAccount],
+    bankAccountById (id : String) : BankAccount
+    customers : [Customer]
+}
+type Mutation {
+    addBankAccount(bankAccount : BankAccountDTO) : BankAccountMutation
+    updateBankAccount(bankAccount : BankAccountDTO, id : String) : BankAccountMutation
+    deleteBankAccount(id: String) : String
+}
+
+""" Make sure the names are same as in class """
+type BankAccountMutation {
+    id : String,
+    createdAt : Int,
+    balance : Float,
+    currency : String,
+    accoutType : String,
+    customerDTO : Customer
+}
+
+type BankAccount {
+    id : String,
+    createdAt : Int,
+    balance : Float,
+    currency : String,
+    accoutType : String,
+    customer : Customer
+}
+
+type Customer {
+    id : Float,
+    name : String
+    bankAccounts : [BankAccount]
+}
+
+input BankAccountDTO {
+    balance : Float,
+    currency : String,
+    accoutType : String,
+    customerDTO : CustomerDTO
+}
+
+input CustomerDTO {
+    id : Float
+}
