@@ -1,5 +1,9 @@
 # Spring-Boot-Bank-Service-REST-GRAPHQL
 
+## Project Structure :
+
+<img width="348" alt="Screen Shot 2022-12-24 at 9 07 40 PM" src="https://user-images.githubusercontent.com/84875875/209449790-09c852c0-0a71-4208-9946-70a7d71d74e1.png">
+
 ## REST :
 
 <img width="892" alt="Screen Shot 2022-12-24 at 9 02 09 PM" src="https://user-images.githubusercontent.com/84875875/209449688-2d5c33c6-140a-40f1-8bef-799d63b74094.png">
